@@ -1,10 +1,13 @@
 {
   "name": "@pipeworx/mcp-csv",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CSV <-> JSON MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-csv": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "csv"],
   "license": "MIT",
   "repository": {
@@ -14,7 +17,16 @@
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-aab1737eda448e9f9f99e53bf15d64eb977faf8e42b13af7544674afce9b3c4a",
+    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
   }
 }
