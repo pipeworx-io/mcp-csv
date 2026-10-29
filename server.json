@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/csv",
   "title": "Csv",
   "description": "CSV <-> JSON MCP.",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/csv",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-csv",

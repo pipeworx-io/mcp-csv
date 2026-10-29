@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-csv",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "CSV <-> JSON MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-csv": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "csv"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-csv.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/csv",
   "pipeworx": {
-    "sourceHash": "v1-aab1737eda448e9f9f99e53bf15d64eb977faf8e42b13af7544674afce9b3c4a",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "mode": "gateway",
+    "slug": "csv",
+    "gatewaySlug": "csv",
+    "sourceHash": "v1-0696664789ee410aea8e6f65b935ae719bfacfb0a41735f5de4074a751000205",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }

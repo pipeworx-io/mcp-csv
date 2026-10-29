@@ -1,0 +1,46 @@
+[
+  {
+    "name": "csv_to_json",
+    "description": "Parse RFC 4180 CSV into JSON (keyless, offline). With `header` true (default) the first row becomes object keys; otherwise rows are returned as arrays. Handles quoted fields, escaped quotes, and embedded commas/newlines. Set `delimiter` for TSV etc.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "csv": {
+          "type": "string",
+          "description": "The CSV text."
+        },
+        "header": {
+          "type": "boolean",
+          "description": "Treat the first row as a header (default true)."
+        },
+        "delimiter": {
+          "type": "string",
+          "description": "Field delimiter (default \",\")."
+        }
+      },
+      "required": [
+        "csv"
+      ]
+    }
+  },
+  {
+    "name": "json_to_csv",
+    "description": "Serialize an array of JSON objects (or arrays) to CSV (keyless, offline). Object keys become the header (union of all keys, in first-seen order). Fields are quoted when needed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "rows": {
+          "type": "array",
+          "description": "An array of objects (or arrays) to serialize."
+        },
+        "delimiter": {
+          "type": "string",
+          "description": "Field delimiter (default \",\")."
+        }
+      },
+      "required": [
+        "rows"
+      ]
+    }
+  }
+]
