@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-csv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CSV <-> JSON MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "csv",
     "gatewaySlug": "csv",
-    "sourceHash": "v1-0696664789ee410aea8e6f65b935ae719bfacfb0a41735f5de4074a751000205",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-cd379a7e8647294f3da79e899ad945670c08927601ad2f3c8bbe8e172ba92dd4",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
